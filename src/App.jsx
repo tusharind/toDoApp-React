@@ -9,7 +9,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
-  const [isLoaded, setIsLoaded] = useState(false); // 🔄 Track if todos were loaded
+  const [isLoaded, setIsLoaded] = useState(false); // Track if todos were loaded
 
   // Load from localStorage on first render
   useEffect(() => {
@@ -49,7 +49,7 @@ function App() {
     } else {
       localStorage.setItem("todos", JSON.stringify([]));
     }
-    setIsLoaded(true); // ✅ Mark as loaded
+    setIsLoaded(true); //  Mark as loaded
   };
 
   return (

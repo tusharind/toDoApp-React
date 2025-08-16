@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     filterHandler();
     if (isLoaded) {
-      saveLocalTodos(); // ✅ Save only if todos have been loaded
+      saveLocalTodos(); // Save only if todos have been loaded
     }
   }, [todos, status]);
 
